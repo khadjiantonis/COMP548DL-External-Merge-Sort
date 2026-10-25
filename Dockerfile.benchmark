@@ -1,0 +1,4 @@
+FROM python:3.13-slim
+RUN pip install --no-cache-dir numpy==2.3.4
+WORKDIR /app
+ENTRYPOINT ["python", "-u", "benchmark.py"]
